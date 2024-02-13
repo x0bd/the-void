@@ -14,7 +14,10 @@ const Header = () => {
 					xoboid
 				</Link>
 				<nav className="flex gap-2 flex-row">
-					<Link className="no-underline hover:underline" href="/">
+					<Link
+						className="no-underline hover:underline"
+						href="/projects"
+					>
 						projects
 					</Link>
 					<Link className="no-underline hover:underline" href="/">
@@ -24,7 +27,7 @@ const Header = () => {
 						art
 					</Link>
 					<Link className="no-underline hover:underline" href="/">
-						chat
+						guestbook
 					</Link>
 				</nav>
 			</nav>
