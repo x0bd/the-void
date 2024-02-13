@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "@/utils/theme-provider";
 import Header from "@/components/Header";
 import "./globals.css";
 
@@ -17,12 +16,10 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body className="prose dark:prose-invert mx-auto flex min-h-screen max-w-[720px] flex-col gap-9 px-10 py-5 text-base md:gap-20 md:py-12">
-				<ThemeProvider attribute="class" defaultTheme="light">
-					<Header />
-					<div className={inter.className}>{children}</div>
-				</ThemeProvider>
+		<html className={inter.className} lang="en">
+			<body className="bg-neutral-900 text-neutral-200 mx-auto flex min-h-screen max-w-[720px] flex-col gap-9 px-10 py-5 text-base md:gap-20 md:py-12">
+				<Header />
+				<div>{children}</div>
 			</body>
 		</html>
 	);
