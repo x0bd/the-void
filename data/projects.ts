@@ -1,3 +1,18 @@
+export const technolgies = {
+	astro: "devicon-plain:astro",
+	nextjs: "akar-icons:nextjs-fill",
+	keystatic: "ph:lightning-fill",
+	tailwind: "mdi:tailwind",
+	remix: "simple-icons:remix",
+	stripe: "fa-brands:stripe",
+	figma: "ph:figma-logo",
+	svelte: "simple-icons:svelte",
+	partykit: "tabler:balloon-filled",
+	hono: "heroicons:fire-20-solid",
+	htmx: "ph:code-bold",
+	prisma: "simple-icons:prisma",
+};
+
 export type Project = {
 	title: string;
 	techs: string[];
@@ -12,7 +27,7 @@ export type Project = {
 const projects: Project[] = [
 	{
 		title: "celeste",
-		techs: ["Celeste", "Vite", "TypeScript"],
+		techs: ["next.js", "figma"],
 		description:
 			"a minimal frontend framework created to have a deeper understanding of browser concepts and TypeScript",
 		link: "github.com/x0bd/celeste",
@@ -23,21 +38,21 @@ const projects: Project[] = [
 
 	{
 		title: "palegen",
-		techs: ["Next.js", "Shadcn/ui", "TypeScript"],
+		techs: ["hono", "htmx"],
 		description: "an app to quickly generate color palettes from images",
 		link: "github.com/x0bd/palegen",
 		promoted: true,
 		image: "lembe.png",
 	},
-	{
-		title: "void.fm",
-		techs: ["Next.js", "Shadcn/ui", "NextAuth", "TypeScript", "Spotify"],
-		description: "A spotify stats app",
-		link: "github.com/xobd",
-		promoted: true,
-		image: "lembe.png",
-		isComingSoon: true,
-	},
+	// {
+	// 	title: "void.fm",
+	// 	techs: ["Next.js", "Shadcn/ui", "NextAuth", "TypeScript", "Spotify"],
+	// 	description: "A spotify stats app",
+	// 	link: "github.com/xobd",
+	// 	promoted: true,
+	// 	image: "lembe.png",
+	// 	isComingSoon: true,
+	// },
 	// {
 	// 	title: "otanoid",
 	// 	techs: [
@@ -55,31 +70,31 @@ const projects: Project[] = [
 	// 	image: "lembe.png",
 	// 	isComingSoon: true,
 	// },
-	{
-		title: "xoboid",
-		techs: ["Next.js", "Shadcn/ui", "TypeScript"],
-		description: "My personal site + blog",
-		link: "xoboid.vercel.app",
-		promoted: false,
-		image: "xoboid.jpg",
-	},
-	{
-		title: "orb",
-		techs: ["WebGL", "TypeScript"],
-		description: "a web based graphics library",
-		link: "github.com/xobd",
-		promoted: false,
-		image: "lembe.png",
-		wip: true,
-	},
-	{
-		title: "wordle-lite",
-		techs: ["React", "SCSS", "JavaScript", "Vite"],
-		link: "github.com/x0bd/wordle-lite",
-		description: "a beautiful tiny clone of the wordle game",
-		promoted: false,
-		image: "lembe.png",
-	},
+	// {
+	// 	title: "xoboid",
+	// 	techs: ["Next.js", "Shadcn/ui", "TypeScript"],
+	// 	description: "My personal site + blog",
+	// 	link: "xoboid.vercel.app",
+	// 	promoted: false,
+	// 	image: "xoboid.jpg",
+	// },
+	// {
+	// 	title: "orb",
+	// 	techs: ["WebGL", "TypeScript"],
+	// 	description: "a web based graphics library",
+	// 	link: "github.com/xobd",
+	// 	promoted: false,
+	// 	image: "lembe.png",
+	// 	wip: true,
+	// },
+	// {
+	// 	title: "wordle-lite",
+	// 	techs: ["React", "SCSS", "JavaScript", "Vite"],
+	// 	link: "github.com/x0bd/wordle-lite",
+	// 	description: "a beautiful tiny clone of the wordle game",
+	// 	promoted: false,
+	// 	image: "lembe.png",
+	// },
 ];
 
 export default projects;
