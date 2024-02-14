@@ -3,24 +3,34 @@
 import projects from "@/data/projects";
 import { Icon } from "@iconify/react";
 import { technolgies } from "@/data/projects";
+import Link from "next/link";
 
 const ProjectCard = () => {
 	return (
 		<div>
-			<Icon icon="simple-icons:remix" />
+			{/* <Icon icon="simple-icons:remix" /> */}
 			{projects.map((project) => (
-				<div
+				<Link
+					href={project.link}
 					key={project.title}
-					className="p-4 border border-emerald-500"
+					target="_blank"
+					className="flex w-full cursor-pointer flex-col justify-between gap-4 p-3 rounded-xl hover:border-neutral-800 hover:bg-neutral-800 p-2 transition-all duration-300"
 				>
-					{project.techs.map((tech) => (
-						<Icon
-							key={project.title}
-							icon={technolgies[tech]}
-							className="text-3xl border border-black border-dashed rounded-full p-1"
-						/>
-					))}
-				</div>
+					<div>{project.title}</div>
+					<div>{project.description}</div>
+					<div className="flex justify-between items-center">
+						<div className="flex gap-2">
+							{project.techs.map((tech) => (
+								<Icon
+									key={project.title}
+									icon={technolgies[tech]}
+									className="text-3xl border border-black border-dashed rounded-full p-1"
+								/>
+							))}
+						</div>
+						<span>Link</span>
+					</div>
+				</Link>
 			))}
 		</div>
 	);

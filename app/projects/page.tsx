@@ -7,8 +7,8 @@ const Projects = () => {
 				<h1 className="text-3xl font-medium">
 					All of the things I`ve built.
 				</h1>
+				<ProjectCard />
 			</main>
-			<ProjectCard />
 		</>
 	);
 };
