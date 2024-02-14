@@ -5,10 +5,7 @@ import Link from "next/link";
 const Header = () => {
 	return (
 		<header className="z-40 text-base font-light text-neutral-300 flex w-full flex-col gap-2 md:flex-row md:justify-between">
-			<Link
-				href="/"
-				className="no-underline font-light text-xl hover:underline"
-			>
+			<Link href="/" className="no-underline font-light hover:underline">
 				xoboid
 			</Link>
 			<nav className="flex gap-3 flex-row">
