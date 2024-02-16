@@ -4,7 +4,7 @@ const Projects = () => {
 	return (
 		<>
 			<main className="flex flex-col gap-10">
-				<h1 className="text-3xl font-medium">
+				<h1 className="text-xl font-medium">
 					All of the things I`ve built.
 				</h1>
 				<ProjectCard />

@@ -12,7 +12,7 @@ const Header = () => {
 				<Link className="no-underline" href="/projects">
 					projects
 				</Link>
-				<Link className="no-underline" href="/">
+				<Link className="no-underline" href="/posts">
 					thoughts
 				</Link>
 				<Link className="no-underline" href="/">
