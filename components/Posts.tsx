@@ -14,8 +14,8 @@ export default async function Posts() {
 	}
 
 	return (
-		<section className="mt-6 mx-auto max-w-2xl">
-			<ul className="w-full list-none p-0">
+		<section className="max-w-2xl">
+			<ul className="flex justify-between flex-col gap-4">
 				{posts.map((post) => (
 					<ListItem key={post.id} post={post} />
 				))}
