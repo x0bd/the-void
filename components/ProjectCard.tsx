@@ -10,7 +10,7 @@ const ProjectCard = () => {
 		<div className="flex flex-col gap-5">
 			{projects.map((project) => (
 				<Link
-					href={project.link}
+					href={`https://${project.link}`}
 					key={project.title}
 					target="_blank"
 					className="flex w-full cursor-pointer flex-col justify-between border border-neutral-600 gap-4 rounded-xl p-2 transition-all duration-300"
@@ -31,7 +31,7 @@ const ProjectCard = () => {
 						</div>
 						<span>
 							<Icon
-								className="text-2xl"
+								className="text-xl"
 								icon="material-symbols:arrow-outward-rounded"
 							/>
 						</span>
