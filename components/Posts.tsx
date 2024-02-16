@@ -15,9 +15,6 @@ export default async function Posts() {
 
 	return (
 		<section className="mt-6 mx-auto max-w-2xl">
-			<h2 className="text-xl">
-				Notes, Thoughts and Doodles on computer stuff
-			</h2>
 			<ul className="w-full list-none p-0">
 				{posts.map((post) => (
 					<ListItem key={post.id} post={post} />
