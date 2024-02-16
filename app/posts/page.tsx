@@ -14,7 +14,7 @@ const page = () => {
 				<h1 className="text-xl font-medium">
 					Notes, Thoughts and Doodles on Computer Stuff
 				</h1>
-				{/* @ts-expect-error Server Component*/}
+
 				<Posts />
 			</main>
 		</>
