@@ -36,6 +36,7 @@ export const technologies = {
 	node: "akar-icons:node-fill",
 	express: "simple-icons:express",
 	tauri: "simple-icons:tauri",
+	mdx: "simple-icons:mdx",
 };
 
 export type Project = {
@@ -45,29 +46,46 @@ export type Project = {
 	promoted: boolean;
 	link: string;
 	isComingSoon?: boolean;
-	image: string;
 	wip?: boolean;
 };
 
 const projects: Project[] = [
 	{
 		title: "celeste",
-		techs: ["next.js", "figma"],
-		description:
-			"a minimal frontend framework created to have a deeper understanding of browser concepts and TypeScript",
+		techs: ["vite", "typeScript"],
+		description: "a toy mvc client-side web framework",
 		link: "github.com/x0bd/celeste",
 		promoted: true,
 		wip: true,
-		image: "lembe.png",
 	},
 
 	{
 		title: "palegen",
-		techs: ["hono", "htmx"],
+		techs: ["nextjs", "shadcn", "vercel", "typeScript"],
 		description: "an app to quickly generate color palettes from images",
 		link: "github.com/x0bd/palegen",
 		promoted: true,
-		image: "lembe.png",
+	},
+	{
+		title: "doodle",
+		techs: ["react", "vite", "tailwind", "electron", "typeScript"],
+		description: "a beautifully crafted markdown note taking app",
+		link: "github.com/x0bd/doodle",
+		promoted: true,
+	},
+	{
+		title: "the void",
+		techs: [
+			"nextjs",
+			"tailwind",
+			"typeScript",
+			"mdx",
+			"vercel",
+			"supabase",
+		],
+		description: "my blog + portfolio site",
+		link: "xoboid.vercel.app",
+		promoted: true,
 	},
 	// {
 	// 	title: "void.fm",
