@@ -2,7 +2,7 @@
 
 import projects from "@/data/projects";
 import { Icon } from "@iconify/react";
-import { technolgies } from "@/data/projects";
+import { technologies } from "@/data/projects";
 import Link from "next/link";
 
 const ProjectCard = () => {
@@ -23,7 +23,7 @@ const ProjectCard = () => {
 							{project.techs.map((tech) => (
 								<Icon
 									key={project.title}
-									icon={technolgies[tech]}
+									icon={technologies[tech]}
 									className="text-3xl border border-black border-dashed rounded-full p-1"
 								/>
 							))}
