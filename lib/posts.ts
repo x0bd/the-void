@@ -2,6 +2,8 @@ import { compileMDX } from "next-mdx-remote/rsc";
 import rehypeHighlight from "rehype-highlight";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import Video from "@/components/Video";
+import CustomImage from "@/components/CustomImage";
 
 type FileTree = {
 	tree: [
@@ -37,6 +39,10 @@ export async function getPostByName(
 		tags: string[];
 	}>({
 		source: rawMDX,
+		components: {
+			Video,
+			CustomImage,
+		},
 		options: {
 			parseFrontmatter: true,
 			mdxOptions: {
