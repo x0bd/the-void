@@ -12,7 +12,6 @@ const page = () => {
 		<>
 			<main className="flex flex-col gap-10">
 				<h1 className="text-xl font-medium">Thoughts</h1>
-
 				<Posts />
 			</main>
 		</>
