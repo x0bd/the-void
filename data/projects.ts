@@ -1,4 +1,8 @@
-export const technologies = {
+type techs= {
+	[key: string]: string
+}
+
+export const technologies: techs = {
 	astro: "devicon-plain:astro",
 	nextjs: "akar-icons:nextjs-fill",
 	tailwind: "mdi:tailwind",
