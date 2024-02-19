@@ -1,6 +1,6 @@
-type techs= {
-	[key: string]: string
-}
+type techs = {
+	[key: string]: string;
+};
 
 export const technologies: techs = {
 	astro: "devicon-plain:astro",
@@ -41,6 +41,7 @@ export const technologies: techs = {
 	express: "simple-icons:express",
 	tauri: "simple-icons:tauri",
 	mdx: "simple-icons:mdx",
+	spotify: "bi:spotify",
 };
 
 export type Project = {
@@ -65,7 +66,7 @@ const projects: Project[] = [
 
 	{
 		title: "palegen",
-		techs: ["nextjs", "shadcn", "vercel", "typeScript"],
+		techs: ["nextjs", "shadcn", "vercel", "javaScript"],
 		description: "an app to quickly generate color palettes from images",
 		link: "github.com/x0bd/palegen",
 		promoted: true,
@@ -79,15 +80,15 @@ const projects: Project[] = [
 	},
 	{
 		title: "the void",
-		techs: [
-			"nextjs",
-			"tailwind",
-			"typeScript",
-			"mdx",
-			"vercel",
-			"supabase",
-		],
+		techs: ["nextjs", "tailwind", "typeScript", "mdx", "vercel", "spotify"],
 		description: "my blog + portfolio site",
+		link: "xoboid.vercel.app",
+		promoted: true,
+	},
+	{
+		title: "guestbook",
+		techs: ["nextjs", "shadcn", "typeScript", "supabase"],
+		description: "an open-source guestbook for your portfolio site",
 		link: "xoboid.vercel.app",
 		promoted: true,
 	},

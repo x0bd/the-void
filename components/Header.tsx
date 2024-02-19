@@ -45,7 +45,7 @@ const Header = () => {
 							? "text-neutral-100 hover:text-neutral-100"
 							: "hover:text-neutral-100"
 					}
-					href="/"
+					href="/art"
 				>
 					art
 				</Link>
