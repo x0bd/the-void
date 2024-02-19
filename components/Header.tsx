@@ -55,9 +55,9 @@ const Header = () => {
 							? "text-neutral-100 hover:text-neutral-100"
 							: "hover:text-neutral-100"
 					}
-					href="/chat"
+					href="/music"
 				>
-					guestbook
+					music
 				</Link>
 			</nav>
 		</header>

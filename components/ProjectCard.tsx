@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const ProjectCard = () => {
 	return (
-		<div className="grid lg:md:grid-cols-2 gap-6 sm:grid-cols-1 md:ga-4">
+		<div className="grid lg:md:grid-cols-2 gap-6 sm:grid-cols-1 md:gap-4">
 			{projects.map((project) => (
 				<Link
 					href={`https://${project.link}`}
