@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import "highlight.js/styles/tokyo-night-dark.css";
 
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 type Props = {
 	params: {
