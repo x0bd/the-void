@@ -6,7 +6,6 @@ export type Photo = {
 };
 
 export const images: Photo[] = [
-	{ src: "/images/anbu.jpg", alt: "anbu", width: 3470, height: 1952 },
 	{
 		src: "/images/pleasure.jpeg",
 		alt: "unknown pleasures",
@@ -27,5 +26,6 @@ export const images: Photo[] = [
 		height: 2489,
 	},
 	{ src: "/images/retro-tv.png", alt: "retro tv", width: 1000, height: 1000 },
+	{ src: "/images/anbu.jpg", alt: "anbu", width: 3470, height: 1952 },
 	{ src: "/images/robot.jpg", alt: "robot", width: 3840, height: 2160 },
 ];
