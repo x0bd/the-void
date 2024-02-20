@@ -14,7 +14,7 @@ const Footer = () => {
 					signals from the void
 				</h1>
 				<div className="flex justify-evenly gap-4">
-					<Link href="/" target="_blank">
+					<Link href="https:twitter.com/xoboid" target="_blank">
 						<Icon icon="pajamas:twitter" />
 					</Link>
 					<Link href="/" target="_blank">

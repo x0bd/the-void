@@ -54,10 +54,8 @@ export default async function Post({ params: { postId } }: Props) {
 	return (
 		<>
 			<h2 className="text-3xl mt-4 mb-0">{meta.title}</h2>
-			<p className="mt-0 text-sm">{pubDate}</p>
-			<article className="mt-10 mb-10 flex flex-col gap-10">
-				{content}
-			</article>
+
+			<article className="mt-10 mb-10">{content}</article>
 			<section>
 				<h3>Related:</h3>
 				<div className="flex flex-row gap-4">{tags}</div>

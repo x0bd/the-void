@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+article p {
+	@apply my-6 leading-7 text-neutral-300;
+}
+
+article li {
+	@apply mx-12 list-disc  text-neutral-300;
+}
+
+article b,
+article strong {
+	@apply text-neutral-200;
+}
+
+article img {
+	@apply rounded-lg;
+}
+
+article h2,
+h1 {
+	@apply mt-6 text-2xl text-neutral-200;
+}
+
+article h3 {
+	@apply mt-4 text-xl text-neutral-200;
+}
+
+article code {
+	@apply px-1 py-[2px] font-mono rounded-lg;
+}
+
+article a {
+	@apply text-neutral-100 underline;
+}
+
+article ul {
+	@apply list-disc;
+}
+
+article blockquote {
+	@apply flex flex-row gap-2 before:block before:h-auto before:w-1 before:max-w-[1px] before:bg-[#ebbcba] before:content-[''];
+}
+
+article pre {
+	@apply p-4;
+}
+
+article pre > code {
+	@apply bg-transparent;
+}

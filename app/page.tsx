@@ -1,7 +1,7 @@
 export default function Home() {
 	return (
 		<main className="mb-10 flex flex-col gap-10 text-neutral-300">
-			<article className="flex flex-col gap-2 md:flex-row-reverse md:justify-end md:gap-12">
+			<div className="flex flex-col gap-2 md:flex-row-reverse md:justify-end md:gap-12">
 				<div className="flex flex-col gap-3">
 					<h2 className="font-extralight text-base text-neutral-400">
 						IPA / zˈɑːbɔ͡ɪd / - no meaning, has to do with robots i
@@ -32,7 +32,7 @@ export default function Home() {
 						between the dark and synthetic.{" "}
 					</p>
 				</div>
-			</article>
+			</div>
 		</main>
 	);
 }
