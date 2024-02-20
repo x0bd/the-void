@@ -1,7 +1,7 @@
 import React from "react";
 
 const Art = () => {
-	return <div>Art</div>;
+	return <div>WIP</div>;
 };
 
 export default Art;

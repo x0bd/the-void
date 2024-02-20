@@ -56,10 +56,10 @@ export default async function Post({ params: { postId } }: Props) {
 			<h2 className="text-3xl mt-4 mb-0">{meta.title}</h2>
 
 			<article className="mt-10 mb-10">{content}</article>
-			<section>
+			{/* <section>
 				<h3>Related:</h3>
 				<div className="flex flex-row gap-4">{tags}</div>
-			</section>
+			</section> */}
 		</>
 	);
 }

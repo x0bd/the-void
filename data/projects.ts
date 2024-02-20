@@ -80,7 +80,7 @@ const projects: Project[] = [
 	},
 	{
 		title: "the void",
-		techs: ["nextjs", "tailwind", "typeScript", "mdx", "vercel", "spotify"],
+		techs: ["nextjs", "tailwind", "typeScript", "mdx", "vercel"],
 		description: "my blog + portfolio site",
 		link: "xoboid.vercel.app",
 		promoted: true,

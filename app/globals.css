@@ -29,7 +29,7 @@ article h3 {
 }
 
 article code {
-	@apply px-1 py-[2px] font-mono rounded-lg;
+	@apply w-full font-mono rounded-lg;
 }
 
 article a {
