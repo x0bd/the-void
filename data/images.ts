@@ -1,11 +1,11 @@
-type Image = {
+export type Photo = {
 	src: string;
 	alt: string;
 	width: number;
 	height: number;
 };
 
-export const images: Image[] = [
+export const images: Photo[] = [
 	{ src: "/images/anbu.jpg", alt: "anbu", width: 1000, height: 1000 },
 	{ src: "/images/arcane.jpg", alt: "arcane", width: 1000, height: 1000 },
 	{ src: "/images/hou.jpg", alt: "samurai", width: 1000, height: 1000 },
