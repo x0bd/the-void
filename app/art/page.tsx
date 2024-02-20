@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import { images } from "@/data/images";
-import Image from "next/image";
 import Gallery from "@/components/Gallery";
 
 export const metadata: Metadata = {
@@ -11,7 +10,7 @@ export const metadata: Metadata = {
 const Art = () => {
 	return (
 		<main>
-			<h1>Art, doodles, generative</h1>
+			<h1>These Are Placeholder Images.</h1>
 			<Gallery />
 		</main>
 	);
