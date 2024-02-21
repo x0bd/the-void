@@ -8,10 +8,11 @@ export default function Home() {
 						think.
 					</h2>
 					<p>
-						👋 Hi There, I'm Tinodaishe aka xoboid, a 22-year-old
-						computer science undergrad. I have a deep passion for
-						bringing ideas to life through code. My interests span
-						across <strong>web development</strong>,{" "}
+						<strong>👋 こんにちは</strong>, I'm Tinodaishe aka
+						xoboid, a 22-year-old computer science undergrad. I have
+						a deep passion for bringing ideas to life through code.
+						My interests span across{" "}
+						<strong>web development</strong>,{" "}
 						<strong>computer graphics</strong>, and{" "}
 						<strong>creative coding</strong>.
 					</p>

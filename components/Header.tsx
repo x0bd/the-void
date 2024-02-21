@@ -49,6 +49,16 @@ const Header = () => {
 				>
 					art
 				</Link>
+				<Link
+					className={
+						pathname === "/music"
+							? "text-neutral-100 hover:text-neutral-100"
+							: "hover:text-neutral-100"
+					}
+					href="/art"
+				>
+					music
+				</Link>
 			</nav>
 		</header>
 	);
