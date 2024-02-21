@@ -9,6 +9,7 @@ const nextConfig = {
 	},
 
 	images: {
+		domains: ["i.scdn.co"],
 		remotePatterns: [
 			{
 				protocol: "https",

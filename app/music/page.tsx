@@ -1,6 +1,7 @@
 "use client";
 
 import { getTopTracks, getTopArtists } from "@/lib/spotify";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -18,7 +19,7 @@ const MusicPage = () => {
 		};
 
 		fetchTracksAndArtists();
-	}, []);
+	}, [tracks, artists]);
 
 	return (
 		<div>
@@ -32,7 +33,13 @@ const MusicPage = () => {
 						key={album}
 						className="flex flex-row items-center space-x-4"
 					>
-						<img src={image} alt={title} className="w-16 h-16" />
+						<Image
+							src={image}
+							alt={title}
+							width={100}
+							height={100}
+							className="w-20 h-20"
+						/>
 						<div className="flex flex-col">
 							<Link href={songUrl}>
 								<h3 className="font-semibold text-neutral-100">
@@ -56,7 +63,13 @@ const MusicPage = () => {
 						key={name}
 						className="flex flex-row items-center space-x-4"
 					>
-						<img src={image} alt={name} className="w-16 h-16" />
+						<Image
+							src={image}
+							alt={name}
+							height={100}
+							width={100}
+							className="w-20 h-20"
+						/>
 						<div className="flex flex-col">
 							<Link href={url}>
 								<h3 className="font-semibold text-neutral-100">
