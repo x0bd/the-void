@@ -3,16 +3,38 @@
 import { getTopTracks } from "../api/getTopTracks";
 import Image from "next/image";
 import Link from "next/link";
+import useSWR from "swr";
 import { getTopArtists } from "../api/getTopArtists";
 
-const tracks = await getTopTracks();
-const artists = await getTopArtists();
+type Artist = {
+	name: string;
+	url: string;
+	image: string;
+	followers: Promise<string>;
+};
 
-if (tracks === undefined) {
-	console.log("tracks not defined");
-}
+type Track = {
+	artists: Artist[];
+	songUrl: string;
+	title: string;
+	album: string;
+	image: string;
+};
+
+type Fetcher<T> = (url: string) => Promise<T>;
+
+const fetcher: Fetcher<any> = (url) => fetch(url).then((res) => res.json());
 
 export default function MusicPage() {
+	const { data: tracks, error: tracksError } = useSWR<Track[]>(
+		"/api/getTopTracks",
+		fetcher
+	);
+	const { data: artists, error: artistsError } = useSWR<Artist[]>(
+		"/api/getTopArtists",
+		fetcher
+	);
+
 	return (
 		<div>
 			<h1 className="text0-neutral-100 text-2xl font-semibold my-8">

@@ -20,7 +20,7 @@ export async function getFollowersOfArtistFromId(id: string) {
 
 	if (!result.success) {
 		console.error(result.error.issues);
-		return 0;
+		return "not available";
 	} else {
 		const { followers } = result.data;
 
@@ -40,31 +40,31 @@ export async function getTopArtists() {
 		}
 	).then((res) => res.json());
 
-	const { items } = z
-		.object({
-			items: z.array(
-				z.object({
-					name: z.string(),
-					images: z.array(
-						z.object({
-							url: z.string(),
-						})
-					),
-					external_urls: z.object({
-						spotify: z.string(),
-					}),
-					followers: z.object({
-						total: z.number(),
-					}),
-				})
-			),
-		})
-		.parse(response);
+	const schema = z.object({
+		items: z.array(
+			z.object({
+				name: z.string(),
+				images: z.array(
+					z.object({
+						url: z.string(),
+					})
+				),
+				external_urls: z.object({
+					spotify: z.string(),
+				}),
+				followers: z.object({
+					total: z.number(),
+				}),
+			})
+		),
+	});
 
-	try {
-		if (typeof items !== "object" || response === null) {
-			throw new Error("Rate Limiter");
-		}
+	const result = schema.safeParse(response);
+
+	if (!result.success) {
+		console.log(result.error.issues);
+	} else {
+		const items = result.data.items;
 		return items.slice(0, 10).map((item) => ({
 			name: item.name,
 			url: item.external_urls.spotify,
@@ -75,13 +75,5 @@ export async function getTopArtists() {
 				]
 			).then((res) => res.toLocaleString()),
 		}));
-	} catch (error) {
-		if (error instanceof z.ZodError) {
-			console.error("Validation error:", error.issues);
-		} else if (error instanceof SyntaxError) {
-			console.error("Parsing error:", error.message);
-		} else {
-			console.error("Unexpected error:", error);
-		}
 	}
 }
