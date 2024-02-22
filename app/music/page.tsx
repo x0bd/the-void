@@ -1,26 +1,12 @@
-"use client";
-
-import { getTopTracks, getTopArtists } from "@/lib/spotify";
+import { getTopTracks } from "../api/getTopTracks";
+import { getTopArtists } from "../api/getTopArtists";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
-// Assuming the functions getTopTracks and getTopArtists are async and return promises
+const tracks = await getTopTracks();
+const artists = await getTopArtists();
+
 const MusicPage = () => {
-	const [tracks, setTracks] = useState([]);
-	const [artists, setArtists] = useState([]);
-
-	useEffect(() => {
-		const fetchTracksAndArtists = async () => {
-			const tracksData = await getTopTracks();
-			const artistsData = await getTopArtists();
-			setTracks(tracksData);
-			setArtists(artistsData);
-		};
-
-		fetchTracksAndArtists();
-	}, [tracks, artists]);
-
 	return (
 		<div>
 			<h1 className="text-neutral-100 text-2xl font-semibold my-8">
@@ -38,7 +24,7 @@ const MusicPage = () => {
 							alt={title}
 							width={100}
 							height={100}
-							className="w-20 h-20"
+							className="rounded-md w-20 h-20"
 						/>
 						<div className="flex flex-col">
 							<Link href={songUrl}>
@@ -68,7 +54,7 @@ const MusicPage = () => {
 							alt={name}
 							height={100}
 							width={100}
-							className="w-20 h-20"
+							className="w-20 h-20 rounded-md"
 						/>
 						<div className="flex flex-col">
 							<Link href={url}>
