@@ -10,15 +10,22 @@ export async function getFollowersOfArtistFromId(id: string) {
 		},
 	}).then((res) => res.json());
 
-	const { followers } = z
-		.object({
-			followers: z.object({
-				total: z.number(),
-			}),
-		})
-		.parse(response);
+	const schema = z.object({
+		followers: z.object({
+			total: z.number(),
+		}),
+	});
 
-	return followers.total;
+	const result = schema.safeParse(response);
+
+	if (!result.success) {
+		console.error(result.error.issues);
+		return 0;
+	} else {
+		const { followers } = result.data;
+
+		return followers.total;
+	}
 }
 
 export async function getTopArtists() {
@@ -54,14 +61,27 @@ export async function getTopArtists() {
 		})
 		.parse(response);
 
-	return items.slice(0, 10).map((item) => ({
-		name: item.name,
-		url: item.external_urls.spotify,
-		image: item.images[0].url,
-		followers: getFollowersOfArtistFromId(
-			item.external_urls.spotify.split("/")[
-				item.external_urls.spotify.split("/").length - 1
-			]
-		).then((res) => res.toLocaleString()),
-	}));
+	try {
+		if (typeof items !== "object" || response === null) {
+			throw new Error("Rate Limiter");
+		}
+		return items.slice(0, 10).map((item) => ({
+			name: item.name,
+			url: item.external_urls.spotify,
+			image: item.images[0].url,
+			followers: getFollowersOfArtistFromId(
+				item.external_urls.spotify.split("/")[
+					item.external_urls.spotify.split("/").length - 1
+				]
+			).then((res) => res.toLocaleString()),
+		}));
+	} catch (error) {
+		if (error instanceof z.ZodError) {
+			console.error("Validation error:", error.issues);
+		} else if (error instanceof SyntaxError) {
+			console.error("Parsing error:", error.message);
+		} else {
+			console.error("Unexpected error:", error);
+		}
+	}
 }

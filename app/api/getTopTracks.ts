@@ -39,11 +39,24 @@ export async function getTopTracks() {
 		})
 		.parse(response);
 
-	return items.slice(0, 10).map((item) => ({
-		artists: item.artists,
-		songUrl: item.external_urls.spotify,
-		title: item.name,
-		album: item.album.name,
-		image: item.album.images[0].url,
-	}));
+	try {
+		if (typeof items !== "object" || response === null) {
+			throw new Error("Rate Limiter");
+		}
+		return items.slice(0, 10).map((item) => ({
+			artists: item.artists,
+			songUrl: item.external_urls.spotify,
+			title: item.name,
+			album: item.album.name,
+			image: item.album.images[0].url,
+		}));
+	} catch (error) {
+		if (error instanceof z.ZodError) {
+			console.error("Validation error:", error.issues);
+		} else if (error instanceof SyntaxError) {
+			console.error("Parsing error:", error.message);
+		} else {
+			console.error("Unexpected error:", error);
+		}
+	}
 }
