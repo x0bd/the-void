@@ -1,7 +1,7 @@
-import { z } from "zod";
 import { getAccessToken } from "@/lib/spotify";
+import { z } from "zod";
 
-export async function getTopTracks() {
+export async function GET() {
 	const { access_token } = await getAccessToken();
 
 	const response = await fetch(
@@ -43,12 +43,14 @@ export async function getTopTracks() {
 		console.log(result.error.issues);
 	} else {
 		const items = result.data.items;
-		return items.slice(0, 10).map((item) => ({
+		const data = items.slice(0, 10).map((item) => ({
 			artists: item.artists,
 			songUrl: item.external_urls.spotify,
 			title: item.name,
 			album: item.album.name,
 			image: item.album.images[0].url,
 		}));
+
+		return Response.json(data);
 	}
 }

@@ -1,7 +1,7 @@
-import { z } from "zod";
 import { getAccessToken } from "@/lib/spotify";
+import { z } from "zod";
 
-export async function getFollowersOfArtistFromId(id: string) {
+async function getFollowersOfArtistFromId(id: string) {
 	const { access_token } = await getAccessToken();
 
 	const response = await fetch(`https://api.spotify.com/v1/artists/${id}`, {
@@ -28,7 +28,7 @@ export async function getFollowersOfArtistFromId(id: string) {
 	}
 }
 
-export async function getTopArtists() {
+export async function GET() {
 	const { access_token } = await getAccessToken();
 
 	const response = await fetch(
@@ -65,7 +65,7 @@ export async function getTopArtists() {
 		console.log(result.error.issues);
 	} else {
 		const items = result.data.items;
-		return items.slice(0, 10).map((item) => ({
+		const data = items.slice(0, 10).map((item) => ({
 			name: item.name,
 			url: item.external_urls.spotify,
 			image: item.images[0].url,
@@ -75,5 +75,6 @@ export async function getTopArtists() {
 				]
 			).then((res) => res.toLocaleString()),
 		}));
+		return Response.json(data);
 	}
 }

@@ -1,10 +1,8 @@
-// "use client";
+"use client";
 
-import { getTopTracks } from "../api/getTopTracks";
+import useSWR from "swr";
 import Image from "next/image";
 import Link from "next/link";
-import useSWR from "swr";
-import { getTopArtists } from "../api/getTopArtists";
 
 type Artist = {
 	name: string;
@@ -25,15 +23,21 @@ type Fetcher<T> = (url: string) => Promise<T>;
 
 const fetcher: Fetcher<any> = (url) => fetch(url).then((res) => res.json());
 
-export default function MusicPage() {
+export default function Page() {
 	const { data: tracks, error: tracksError } = useSWR<Track[]>(
-		"/api/getTopTracks",
+		"/api/tracks",
 		fetcher
 	);
 	const { data: artists, error: artistsError } = useSWR<Artist[]>(
-		"/api/getTopArtists",
+		"/api/artists",
 		fetcher
 	);
+
+	if (tracksError || artistsError) return <div>Failed to load data</div>;
+	if (!tracks || !artists) return <div>Loading...</div>;
+
+	console.log(artists.map((artist) => artist.followers));
+	console.log(artists);
 
 	return (
 		<div>
@@ -75,28 +79,24 @@ export default function MusicPage() {
 			<h1 className="text-neutral-100 text-2xl font-semibold my-8">
 				Top Artists
 			</h1>
-
 			<div className="flex flex-col gap-y-4">
 				{artists &&
-					artists.map(({ name, url, image, followers }) => (
+					artists.map((artist) => (
 						<div
-							key={name}
+							key={artist.name}
 							className="flex flex-row items-center space-x-4"
 						>
 							<Image
-								src={image}
-								alt={name}
+								src={artist.image}
+								alt={artist.name}
 								height={100}
 								width={100}
 								className="w-20 h-20"
 							/>
 							<div className="flex flex-col">
-								<Link href={url}>
-									<h3 className="font-semibold text-neutral-100">
-										{name}
-									</h3>
-								</Link>
-								<p>{followers} followers</p>
+								<h3 className="fomt-semibold text-neutral-100">
+									{artist.name}
+								</h3>
 							</div>
 						</div>
 					))}
