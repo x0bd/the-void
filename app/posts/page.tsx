@@ -1,10 +1,8 @@
 import Posts from "@/components/Posts";
 import { Metadata } from "next";
 
-
-
 export const metadata: Metadata = {
-	title: "notes and doodles",
+	title: "xoboid • thoughts",
 	description:
 		"Notes, Thoughts and Doodles on Stuff You can do with a computer",
 };

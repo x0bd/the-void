@@ -3,8 +3,8 @@ import { images } from "@/data/images";
 import Gallery from "@/components/Gallery";
 
 export const metadata: Metadata = {
-	title: "xoboid - art",
-	description: "",
+	title: "xoboid • art",
+	description: "3D Explorations | Generative Doodles",
 };
 
 const Art = () => {
