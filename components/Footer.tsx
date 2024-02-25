@@ -13,7 +13,7 @@ const Footer = () => {
 					signals from the void
 				</p>
 				<div className="flex justify-end items-end gap-4">
-					<Link href="https:twitter.com/xoboid" target="_blank">
+					<Link href="https://twitter.com/xoboid" target="_blank">
 						<Icon icon="pajamas:twitter" />
 					</Link>
 					<Link href="https://github.com/x0bd" target="_blank">

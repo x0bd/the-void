@@ -3,7 +3,6 @@
 import useSWR from "swr";
 import Image from "next/image";
 import Link from "next/link";
-import { Metadata } from "next";
 
 type Artist = {
 	name: string;
@@ -23,8 +22,6 @@ type Track = {
 type Fetcher<T> = (url: string) => Promise<T>;
 
 const fetcher: Fetcher<any> = (url) => fetch(url).then((res) => res.json());
-
-
 
 export default function Page() {
 	const { data: tracks, error: tracksError } = useSWR<Track[]>(
