@@ -39,7 +39,7 @@ const Header = () => {
 				>
 					thoughts
 				</Link>
-				<Link
+				{/* <Link
 					className={
 						pathname === "/art"
 							? "text-neutral-100 hover:text-neutral-100"
@@ -48,7 +48,7 @@ const Header = () => {
 					href="/art"
 				>
 					art
-				</Link>
+				</Link> */}
 				<Link
 					className={
 						pathname === "/music"
