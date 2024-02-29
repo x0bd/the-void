@@ -8,29 +8,38 @@ export default function Home() {
 						think.
 					</h2>
 					<p>
-						<strong>👋 こんにちは</strong>, I'm Tinodaishe aka
-						xoboid, a 22-year-old computer science undergrad. I have
-						a deep passion for bringing ideas to life through code.
-						My interests span across{" "}
-						<strong>web development</strong>,{" "}
+						<strong>👋 こんにちは</strong>, My name is{" "}
+						<strong>Tinodaishe Tembo</strong> aka{" "}
+						<strong>xoboid</strong>. I'm a programmer and designer
+						who delights in decoding signals from the{" "}
+						<strong>void</strong> through code and pixel
+						experiments.
+					</p>
+					<p>
+						My interests encompass <strong>web development</strong>,{" "}
 						<strong>computer graphics</strong>, and{" "}
-						<strong>creative coding</strong>.
+						<strong>terminal tools</strong>. I'm passionate about
+						crafting digital experiences that are not only highly
+						performant but also visually captivating. Recently, I've
+						been exploring the <strong>Rust</strong> programming
+						language, engaging in a wide range of projects from
+						creating terminal toys to developing graphics engines,
+						some of which may never see widespread use, but that's
+						okay!
 					</p>
 					<p>
-						Currently I'm honing my skills in web development, with
-						a keen interest to learn <strong>Rust</strong> in order
-						to craft highly performant and visually appealing
-						experiences. I've also begun to explore the fascinating
-						world of open-source software, eager to contribute and
-						learn from the community.
+						When I'm not immersed in my computer, I enjoy spending
+						time with friends or losing myself in the complex
+						narratives of hard science fiction. The Three Body
+						Problem Trilogy holds a special place in my heart.
+						Learning <strong>Japanese</strong> has also been a
+						rewarding hobby.
 					</p>
 					<p>
-						In my free time, I enjoy decoding signals from the void
-						through code and pixel experiments. Outside of the
-						computer realm, I usually spend time with friends,
-						immersing myself in the intricate narratives of hard
-						science fiction, and creating music that oscillates
-						between the dark and synthetic.{" "}
+						I'm also deeply passionate about music, investing my
+						time in the exploration of my synthesizers to forge
+						sounds that amalgamate the enigmatic with the
+						electronic.
 					</p>
 				</div>
 			</div>

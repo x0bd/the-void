@@ -19,7 +19,7 @@ const Footer = () => {
 					<Link href="https://github.com/x0bd" target="_blank">
 						<Icon icon="mingcute:github-line" />
 					</Link>
-					<Link href="/" target="_blank">
+					<Link href="https://codepen.io/synthmancer" target="_blank">
 						<Icon icon="teenyicons:codepen-solid" />
 					</Link>
 					<Link
