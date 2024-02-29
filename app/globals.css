@@ -20,12 +20,12 @@ article img {
 }
 
 article h2,
-h1 {
-	@apply mt-6 text-2xl text-neutral-200;
+article h1 {
+	@apply mt-6 text-2xl no-underline text-neutral-200;
 }
 
 article h3 {
-	@apply mt-4 text-xl text-neutral-200;
+	@apply mt-4 text-xl no-underline text-neutral-200;
 }
 
 article code {

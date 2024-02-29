@@ -65,7 +65,7 @@ export async function GET() {
 		console.log(result.error.issues);
 	} else {
 		const items = result.data.items;
-		const data = items.slice(0, 10).map((item) => ({
+		const data = items.slice(0, 15).map((item) => ({
 			name: item.name,
 			url: item.external_urls.spotify,
 			image: item.images[0].url,
