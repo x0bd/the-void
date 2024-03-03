@@ -38,6 +38,16 @@ export const technologies: techs = {
 	spotify: "bi:spotify",
 };
 
+export type Experiment = {
+	title: string;
+	preview: string;
+	previewType: "img" | "vid";
+	techs: string[];
+	github?: string;
+	web?: string;
+	codepen?: string;
+};
+
 export type Project = {
 	title: string;
 	techs: string[];
@@ -48,7 +58,16 @@ export type Project = {
 	wip?: boolean;
 };
 
-const projects: Project[] = [
+export const experiments: Experiment[] = [
+	{
+		title: "Unknown Pleasures Live",
+		techs: ["p5.js", "js"],
+		preview: "",
+		previewType: "img",
+	},
+];
+
+export const projects: Project[] = [
 	{
 		title: "celeste",
 		techs: ["vite", "typeScript"],
@@ -86,57 +105,4 @@ const projects: Project[] = [
 		link: "xoboid.vercel.app",
 		promoted: true,
 	},
-	// {
-	// 	title: "void.fm",
-	// 	techs: ["Next.js", "Shadcn/ui", "NextAuth", "TypeScript", "Spotify"],
-	// 	description: "A spotify stats app",
-	// 	link: "github.com/xobd",
-	// 	promoted: true,
-	// 	image: "lembe.png",
-	// 	isComingSoon: true,
-	// },
-	// {
-	// 	title: "otanoid",
-	// 	techs: [
-	// 		"Next.js",
-	// 		"Shadcn/ui",
-	// 		"TypeScript",
-	// 		"Supabase",
-	// 		"Zustand",
-	// 		"DrizzleORM",
-	// 	],
-	// 	description:
-	// 		"an app to help you efficiently manage your manga and anime backlog",
-	// 	link: "ota.sh",
-	// 	promoted: true,
-	// 	image: "lembe.png",
-	// 	isComingSoon: true,
-	// },
-	// {
-	// 	title: "xoboid",
-	// 	techs: ["Next.js", "Shadcn/ui", "TypeScript"],
-	// 	description: "My personal site + blog",
-	// 	link: "xoboid.vercel.app",
-	// 	promoted: false,
-	// 	image: "xoboid.jpg",
-	// },
-	// {
-	// 	title: "orb",
-	// 	techs: ["WebGL", "TypeScript"],
-	// 	description: "a web based graphics library",
-	// 	link: "github.com/xobd",
-	// 	promoted: false,
-	// 	image: "lembe.png",
-	// 	wip: true,
-	// },
-	// {
-	// 	title: "wordle-lite",
-	// 	techs: ["React", "SCSS", "JavaScript", "Vite"],
-	// 	link: "github.com/x0bd/wordle-lite",
-	// 	description: "a beautiful tiny clone of the wordle game",
-	// 	promoted: false,
-	// 	image: "lembe.png",
-	// },
 ];
-
-export default projects;

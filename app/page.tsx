@@ -29,7 +29,7 @@ export default function Home() {
 					</p>
 					<p>
 						When I'm not immersed in my computer, I enjoy spending
-						time with friends or losing myself in the complex
+						time with friends or losing myself in the intricate
 						narratives of hard science fiction. The Three Body
 						Problem Trilogy holds a special place in my heart.
 						Learning <strong>Japanese</strong> has also been a

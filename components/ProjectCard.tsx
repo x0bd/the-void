@@ -1,6 +1,6 @@
 "use client";
 
-import projects from "@/data/projects";
+import { projects } from "@/data/projects";
 import { Icon } from "@iconify/react";
 import { technologies } from "@/data/projects";
 import Link from "next/link";

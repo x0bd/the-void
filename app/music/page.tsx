@@ -36,9 +36,6 @@ export default function Page() {
 	if (tracksError || artistsError) return <div>Failed to load data</div>;
 	if (!tracks || !artists) return <div>Loading...</div>;
 
-	console.log(artists.map((artist) => artist.followers));
-	console.log(artists);
-
 	return (
 		<div>
 			<h1 className="text0-neutral-100 text-2xl font-semibold my-8">
