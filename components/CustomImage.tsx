@@ -6,7 +6,7 @@ type Props = {
 	priority?: string;
 };
 
-const externalImageLoader = ({ src }: { src: string }) => {};
+
 
 export default function CustomImage({ src, alt, priority }: Props) {
 	const prty = priority ? true : false;

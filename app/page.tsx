@@ -18,14 +18,14 @@ export default function Home() {
 					<p>
 						My interests encompass <strong>web development</strong>,{" "}
 						<strong>computer graphics</strong>, and{" "}
-						<strong>terminal tools</strong>. I'm passionate about
-						crafting digital experiences that are not only highly
-						performant but also visually captivating. Recently, I've
-						been exploring the <strong>Rust</strong> programming
-						language, engaging in a wide range of projects from
-						creating terminal toys to developing graphics engines,
-						some of which may never see widespread use, but that's
-						okay!
+						<strong>immersive storytelling</strong>. I'm passionate
+						about crafting digital experiences that are not only
+						highly performant but also visually captivating.
+						Recently, I've been exploring the <strong>Rust</strong>{" "}
+						programming language, engaging in a wide range of
+						projects from creating terminal toys to developing
+						graphics engines, some of which may never see widespread
+						use, but that's okay!
 					</p>
 					<p>
 						When I'm not immersed in my computer, I enjoy spending
