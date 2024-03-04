@@ -1,4 +1,4 @@
-import { images } from "@/data/images";
+import { images } from "@/data/experiment";
 import ImageContainer from "./ImageContainer";
 
 const Gallery = () => {

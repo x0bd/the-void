@@ -41,11 +41,11 @@ export const technologies: techs = {
 export type Experiment = {
 	title: string;
 	preview: string;
-	previewType: "img" | "vid";
 	techs: string[];
 	github?: string;
 	web?: string;
 	codepen?: string;
+	previewAlt: string;
 };
 
 export type Project = {
@@ -61,9 +61,15 @@ export type Project = {
 export const experiments: Experiment[] = [
 	{
 		title: "Unknown Pleasures Live",
-		techs: ["p5.js", "js"],
-		preview: "",
-		previewType: "img",
+		techs: ["p5js", "javaScript"],
+		preview: "/images/pleasure.jpeg",
+		previewAlt: "Unknown Pleasures",
+	},
+	{
+		title: "Three Body Problem",
+		techs: ["p5.js", "javaScript"],
+		preview: "/images/demon.jpg",
+		previewAlt: "Three Body Problem",
 	},
 ];
 
