@@ -91,7 +91,7 @@ export default function Page() {
 								className="w-20 rounded-lg h-20"
 							/>
 							<div className="flex flex-col">
-								<h3 className="fomt-semibold text-neutral-100">
+								<h3 className="font-semibold text-neutral-100">
 									{artist.name}
 								</h3>
 							</div>
