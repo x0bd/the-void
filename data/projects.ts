@@ -77,18 +77,10 @@ export const projects: Project[] = [
 	{
 		title: "celeste",
 		techs: ["vite", "typeScript"],
-		description: "a toy mvc client-side web framework",
+		description: "an mvc client-side web framework",
 		link: "github.com/x0bd/celeste",
 		promoted: true,
 		wip: true,
-	},
-
-	{
-		title: "palegen",
-		techs: ["nextjs", "shadcn", "vercel", "javaScript"],
-		description: "an app to quickly generate color palettes from images",
-		link: "github.com/x0bd/palegen",
-		promoted: true,
 	},
 	{
 		title: "doodle",
