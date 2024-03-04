@@ -5,7 +5,7 @@ const Projects = () => {
 		<>
 			<main className="flex flex-col gap-10">
 				<h1 className="text-xl font-medium">
-					Passion projects and fun little experiments
+					All of my passion projects
 				</h1>
 				<ProjectCard />
 			</main>
