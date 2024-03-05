@@ -1,3 +1,8 @@
+"use client";
+
+import { Icon } from "@iconify/react";
+import Link from "next/link";
+
 export default function Home() {
 	return (
 		<main className="mb-10 flex flex-col gap-10 text-neutral-300">
@@ -42,6 +47,7 @@ export default function Home() {
 						sounds that amalgamate the enigmatic with the
 						electronic.
 					</p>
+					
 				</div>
 			</div>
 		</main>
