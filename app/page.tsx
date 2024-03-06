@@ -41,12 +41,6 @@ export default function Home() {
 						Learning <strong>Japanese</strong> has also been a
 						rewarding hobby.
 					</p>
-					<p>
-						I'm also deeply passionate about music, investing my
-						time in the exploration of my synthesizers to forge
-						sounds that amalgamate the enigmatic with the
-						electronic.
-					</p>
 				</div>
 			</div>
 		</main>
