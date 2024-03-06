@@ -19,6 +19,10 @@ article img {
 	@apply rounded-lg;
 }
 
+article a {
+	@apply no-underline;
+}
+
 article h2,
 article h1 {
 	@apply mt-6 text-2xl no-underline text-neutral-200;
@@ -33,7 +37,7 @@ article code {
 }
 
 article a {
-	@apply text-neutral-100 underline;
+	@apply text-neutral-100 no-underline font-semibold;
 }
 
 article ul {

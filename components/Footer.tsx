@@ -25,7 +25,7 @@ const Footer = () => {
 					>
 						<Icon icon="lucide:linkedin" />
 					</Link>
-					<Link href="/">
+					<Link href="/resume.pdf">
 						<Icon icon="lucide:file-text" />
 					</Link>
 				</div>
