@@ -22,16 +22,16 @@ export default function Home() {
 					</p>
 					<p>
 						My interests encompass <strong>web development</strong>,{" "}
-						<strong>computer graphics</strong>, and{" "}
-						<strong>immersive storytelling</strong>. I'm passionate
-						about crafting digital experiences that are visually
+						<strong>terminal tools</strong>, and{" "}
+						<strong>creative coding</strong>. I'm passionate about
+						crafting digital experiences that are visually
 						captivating, with intuitive interactions, with an
 						obsession for small details. Recently, I've been
 						exploring the world of{" "}
-						<strong>frontend infrastructure</strong>, engaging in a
-						wide range of projects from creating ui frameworks to
-						developing graphics libraries, some of which may never
-						see widespread use, but that's okay
+						<strong>web infrastructure</strong>, engaging in a wide
+						range of projects from creating ui frameworks to
+						developing css libraries, some of which may never see
+						widespread use, but that's okay
 					</p>
 					<p>
 						When I'm not immersed in my computer, I enjoy spending
@@ -47,7 +47,6 @@ export default function Home() {
 						sounds that amalgamate the enigmatic with the
 						electronic.
 					</p>
-					
 				</div>
 			</div>
 		</main>

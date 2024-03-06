@@ -25,7 +25,7 @@ export default function ImageContainer({ photo }: Props) {
 						height={photo.height}
 						sizes="300px"
 						priority
-						className="rounded-lg object-cover hover:cursor-pointer hover:opacity-75"
+						className="rounded-md object-cover hover:cursor-pointer hover:opacity-75"
 					/>
 				</Link>
 			</div>
