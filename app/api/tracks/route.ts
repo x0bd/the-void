@@ -43,7 +43,7 @@ export async function GET() {
 		console.log(result.error.issues);
 	} else {
 		const items = result.data.items;
-		const data = items.slice(0, 20).map((item) => ({
+		const data = items.slice(0, 15).map((item) => ({
 			artists: item.artists,
 			songUrl: item.external_urls.spotify,
 			title: item.name,

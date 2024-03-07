@@ -9,7 +9,9 @@ export const metadata: Metadata = {
 const Art = () => {
 	return (
 		<main className="flex flex-col gap-10">
-			<h1 className="text-xl font-medium">Fun Little Experiments</h1>
+			<h1 className="text-xl font-medium">
+				Fun Little Generative Experiments
+			</h1>
 			<Gallery />
 		</main>
 	);

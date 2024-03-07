@@ -41,13 +41,13 @@ const Header = () => {
 				</Link>
 				<Link
 					className={
-						pathname === "/fun"
+						pathname === "/sketches"
 							? "text-neutral-100 hover:text-neutral-100"
 							: "hover:text-neutral-100"
 					}
-					href="/fun"
+					href="/sketches"
 				>
-					fun
+					sketches
 				</Link>
 				<Link
 					className={
