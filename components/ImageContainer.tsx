@@ -16,7 +16,7 @@ export default function ImageContainer({ photo }: Props) {
 			className="w-[300px] justify-self-center"
 			style={{ gridRow: `span ${photoSpans}` }}
 		>
-			<div className="grid place-content-center overflow-hidden group">
+			<div className="grid gap place-content-center overflow-hidden group">
 				<Link href={photo.link} target="_blank">
 					<Image
 						src={photo.src}
