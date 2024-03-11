@@ -8,8 +8,15 @@ export type Photo = {
 
 export const images: Photo[] = [
 	{
-		src: "/images/joy-division.png",
+		src: "/images/joy.png",
 		alt: "unknown pleasures",
+		width: 700,
+		height: 700,
+		link: "/",
+	},
+	{
+		src: "/images/waves.gif",
+		alt: "hard waves",
 		width: 700,
 		height: 700,
 		link: "/",
