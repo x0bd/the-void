@@ -38,16 +38,6 @@ export const technologies: techs = {
 	spotify: "bi:spotify",
 };
 
-export type Experiment = {
-	title: string;
-	preview: string;
-	techs: string[];
-	github?: string;
-	web?: string;
-	codepen?: string;
-	previewAlt: string;
-};
-
 export type Project = {
 	title: string;
 	techs: string[];
@@ -57,21 +47,6 @@ export type Project = {
 	isComingSoon?: boolean;
 	wip?: boolean;
 };
-
-export const experiments: Experiment[] = [
-	{
-		title: "Unknown Pleasures Live",
-		techs: ["p5js", "javaScript"],
-		preview: "/images/pleasure.jpeg",
-		previewAlt: "Unknown Pleasures",
-	},
-	{
-		title: "Three Body Problem",
-		techs: ["p5.js", "javaScript"],
-		preview: "/images/demon.jpg",
-		previewAlt: "Three Body Problem",
-	},
-];
 
 export const projects: Project[] = [
 	{
@@ -94,6 +69,13 @@ export const projects: Project[] = [
 		techs: ["nextjs", "tailwind", "spotify", "typeScript", "vercel"],
 		description: "my portfolio site + blog",
 		link: "xoboid.vercel.app",
+		promoted: true,
+	},
+	{
+		title: "rascii",
+		techs: ["rust"],
+		description: "a cli tool to quickly generate ascii art from images",
+		link: "/",
 		promoted: true,
 	},
 ];

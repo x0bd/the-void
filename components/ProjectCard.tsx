@@ -13,7 +13,7 @@ const ProjectCard = () => {
 					href={`https://${project.link}`}
 					key={project.title}
 					target="_blank"
-					className="flex w-full cursor-pointer flex-col justify-between border border-neutral-600 gap-4 rounded-xl p-4 transition-transform hover:border-neutral-400 hover:-translate-y-1 duration-300"
+					className="flex w-full cursor-pointer flex-col justify-between border border-neutral-600 gap-4 rounded-lg p-4 transition-transform hover:border-neutral-400 hover:-translate-y-1 duration-300"
 				>
 					<div className="text-xl">{project.title}</div>
 					<div className="text-sm text-neutral-400">
