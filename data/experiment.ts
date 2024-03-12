@@ -21,4 +21,11 @@ export const images: Photo[] = [
 		height: 700,
 		link: "/",
 	},
+	{
+		src: "/images/morty.png",
+		alt: "Morty Smith",
+		width: 1040,
+		height: 1005,
+		link: "/",
+	},
 ];

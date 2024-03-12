@@ -3,7 +3,7 @@ import ImageContainer from "./ImageContainer";
 
 const Gallery = () => {
 	return (
-		<div className="p-5 px-0 my-3 grid grid-cols-gallery auto-rows-[11px]">
+		<div className="p-3 px-0 bg-zinc-300 rounded-md grid grid-cols-gallery auto-rows-[10px]">
 			{images.map((image, index) => (
 				<ImageContainer key={index} photo={image} />
 			))}
