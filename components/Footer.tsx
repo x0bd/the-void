@@ -19,6 +19,12 @@ const Footer = () => {
 					<Link href="https://github.com/x0bd" target="_blank">
 						<Icon icon="mingcute:github-line" />
 					</Link>
+					<Link
+						href="https://www.linkedin.com/in/tinodaishe-tembo-70aa3a266?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2BgUgLLlaRBGgD1%2FqEgkQOg%3D%3D"
+						target="_blank"
+					>
+						<Icon icon="lucide:linkedin" />
+					</Link>
 					<Link href="/resume.pdf">
 						<Icon icon="lucide:file-text" />
 					</Link>

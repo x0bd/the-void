@@ -36,6 +36,7 @@ export const technologies: techs = {
 	express: "simple-icons:express",
 	mdx: "simple-icons:mdx",
 	spotify: "bi:spotify",
+	rust: "simple-icons:rust",
 };
 
 export type Project = {
