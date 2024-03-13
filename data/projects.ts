@@ -37,6 +37,7 @@ export const technologies: techs = {
 	mdx: "simple-icons:mdx",
 	spotify: "bi:spotify",
 	rust: "simple-icons:rust",
+	framer_motion: "tabler:brand-framer-motion",
 };
 
 export type Project = {
@@ -76,14 +77,14 @@ export const projects: Project[] = [
 		title: "rascii",
 		techs: ["rust"],
 		description: "a cli tool to quickly generate ascii art from images",
-		link: "/",
+		link: "github.com/x0bd/rascii",
 		promoted: true,
 	},
 	{
 		title: "typedash",
-		techs: ["react", "vite", "framer-motion", "tailwind", "typeScript"],
+		techs: ["react", "vite", "framer_motion", "tailwind", "typeScript"],
 		description: "a visually stunning speed typing game",
-		link: "/",
+		link: "github.com/x0bd/typedash",
 		promoted: true,
 	},
 ];
