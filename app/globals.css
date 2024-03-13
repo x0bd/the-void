@@ -7,7 +7,7 @@ article p {
 }
 
 article li {
-	@apply mx-12 list-disc  text-neutral-300;
+	@apply mx-10 list-disc  text-neutral-300;
 }
 
 article b,
@@ -33,7 +33,7 @@ article h3 {
 }
 
 article code {
-	@apply w-full font-mono rounded-lg;
+	@apply w-full font-mono font-semibold text-zinc-100;
 }
 
 article a {
@@ -48,10 +48,6 @@ article blockquote {
 	@apply flex flex-row gap-2 before:block before:h-auto before:w-1 before:max-w-[1px] before:bg-[#ebbcba] before:content-[''];
 }
 
-article pre {
-	@apply p-4;
-}
-
 article pre > code {
-	@apply bg-transparent;
+	@apply bg-transparent rounded-md;
 }
