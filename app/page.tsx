@@ -22,16 +22,16 @@ export default function Home() {
 					</p>
 					<p>
 						My interests encompass <strong>web development</strong>,{" "}
-						<strong>terminal tools</strong>, and{" "}
-						<strong>creative coding</strong>. I'm passionate about
+						<strong>computer graphics</strong>, and{" "}
+						<strong>terminal apps</strong>. I'm passionate about
 						crafting digital experiences that are visually
 						captivating, with intuitive interactions, with an
 						obsession for small details. Recently, I've been
 						exploring the world of{" "}
 						<strong>web infrastructure</strong>, engaging in a wide
 						range of projects from creating ui frameworks to
-						developing css libraries, some of which may never see
-						widespread use, but that's okay
+						developing graphics libraries, some of which may never
+						see widespread use, but that's okay
 					</p>
 					<p>
 						When I'm not immersed in my computer, I enjoy spending

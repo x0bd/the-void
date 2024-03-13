@@ -66,7 +66,7 @@ export const projects: Project[] = [
 		promoted: true,
 	},
 	{
-		title: "the void",
+		title: "xoboid",
 		techs: ["nextjs", "tailwind", "spotify", "typeScript", "vercel"],
 		description: "my portfolio site + blog",
 		link: "xoboid.vercel.app",
@@ -76,6 +76,13 @@ export const projects: Project[] = [
 		title: "rascii",
 		techs: ["rust"],
 		description: "a cli tool to quickly generate ascii art from images",
+		link: "/",
+		promoted: true,
+	},
+	{
+		title: "typedash",
+		techs: ["react", "vite", "framer-motion", "tailwind", "typeScript"],
+		description: "a visually stunning speed typing game",
 		link: "/",
 		promoted: true,
 	},
