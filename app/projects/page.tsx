@@ -1,4 +1,10 @@
 import ProjectCard from "@/components/ProjectCard";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "xoboid • projects",
+	description: "i own a computer",
+};
 
 const Projects = () => {
 	return (

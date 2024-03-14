@@ -23,17 +23,20 @@ article a {
 	@apply no-underline;
 }
 
-article h2,
 article h1 {
 	@apply mt-6 text-2xl no-underline text-neutral-200;
 }
 
-article h3 {
+article h2 {
 	@apply mt-4 text-xl no-underline text-neutral-200;
 }
 
+article h3 {
+	@apply mt-2 text-lg no-underline text-neutral-200;
+}
+
 article code {
-	@apply w-full font-mono font-semibold text-zinc-100;
+	@apply w-full rounded-sm font-mono bg-zinc-700 font-semibold text-zinc-100;
 }
 
 article a {

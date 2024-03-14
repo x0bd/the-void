@@ -1,14 +1,9 @@
-"use client";
-
-import { Icon } from "@iconify/react";
-import Link from "next/link";
-
 export default function Home() {
 	return (
 		<main className="mb-10 flex flex-col gap-10 text-neutral-300">
 			<div className="flex flex-col gap-2 md:flex-row-reverse md:justify-end md:gap-12">
 				<div className="flex flex-col gap-3">
-					<h2 className="font-extralight text-base text-neutral-400">
+					<h2 className="font-extralight text-sm text-neutral-500">
 						IPA / zˈɑːbɔ͡ɪd / - no meaning, has to do with robots i
 						think.
 					</h2>
@@ -23,7 +18,7 @@ export default function Home() {
 					<p>
 						My interests encompass <strong>web development</strong>,{" "}
 						<strong>computer graphics</strong>, and{" "}
-						<strong>terminal apps</strong>. I'm passionate about
+						<strong>terminals</strong>. I'm passionate about
 						crafting digital experiences that are visually
 						captivating, with intuitive interactions, with an
 						obsession for small details. Recently, I've been

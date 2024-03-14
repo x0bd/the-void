@@ -5,8 +5,7 @@ export const revalidate = 0;
 
 export const metadata: Metadata = {
 	title: "xoboid • thoughts",
-	description:
-		"Notes, Thoughts and Ideas on Stuff You can do with a computer",
+	description: "thoughts on stuff you can do on a a computer.",
 };
 
 const page = () => {
