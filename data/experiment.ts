@@ -15,7 +15,7 @@ export const images: Photo[] = [
 		link: "/",
 	},
 	{
-		src: "/images/waves.gif",
+		src: "/images/waves.png",
 		alt: "hard waves",
 		width: 700,
 		height: 700,
