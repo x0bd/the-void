@@ -83,8 +83,8 @@ export const projects: Project[] = [
 	{
 		title: "typedash",
 		techs: ["react", "vite", "framer_motion", "tailwind", "typeScript"],
-		description: "a visually stunning speed typing game",
-		link: "github.com/x0bd/typedash",
+		description: "a Rosé Pine themed speed typing game",
+		link: "typedashi.vercel.app",
 		promoted: true,
 	},
 ];

@@ -1,7 +1,7 @@
 import Posts from "@/components/Posts";
 import { Metadata } from "next";
 
-export const revalidate = 0;
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
 	title: "xoboid • thoughts",
