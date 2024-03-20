@@ -18,10 +18,10 @@ export default function Home() {
 					<p>
 						My interests encompass <strong>web development</strong>,{" "}
 						<strong>computer graphics</strong>, and{" "}
-						<strong>terminals</strong>. I'm passionate about
-						crafting digital experiences that are visually
-						captivating, with intuitive interactions, with an
-						obsession for small details. Recently, I've been
+						<strong>human computer interaction</strong>. I'm
+						passionate about crafting digital experiences that are
+						visually captivating, with intuitive interactions, with
+						an obsession for small details. Recently, I've been
 						exploring the world of{" "}
 						<strong>web infrastructure</strong>, engaging in a wide
 						range of projects from creating ui frameworks to

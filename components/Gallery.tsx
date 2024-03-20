@@ -1,11 +1,11 @@
 import { images } from "@/data/experiment";
-import ImageContainer from "./ImageContainer";
+import Experiment from "./Experiments";
 
 const Gallery = () => {
 	return (
-		<div className="p-3 m-0 px-0 bg-zinc-300 rounded-md grid grid-cols-gallery auto-rows-[10px]">
+		<div className="flex flex-col bg-zinc-300 rounded-lg sm:p-3 sm:gap-3 gap-3 p-2">
 			{images.map((image, index) => (
-				<ImageContainer key={index} photo={image} />
+				<Experiment key={index} experiment={image} />
 			))}
 		</div>
 	);

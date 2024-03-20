@@ -1,4 +1,4 @@
-export type Photo = {
+export type Experiment = {
 	src: string;
 	alt: string;
 	width: number;
@@ -6,7 +6,7 @@ export type Photo = {
 	link: string;
 };
 
-export const images: Photo[] = [
+export const images: Experiment[] = [
 	{
 		src: "/images/joy.png",
 		alt: "unknown pleasures",
