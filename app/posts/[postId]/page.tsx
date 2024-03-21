@@ -2,7 +2,7 @@ import getFormattedDate from "@/lib/getFormattedDate";
 import { getPostsMeta, getPostByName } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import "highlight.js/styles/tokyo-night-dark.css";
+import "highlight.js/styles/androidstudio.css";
 
 type Props = {
 	params: {
