@@ -9,15 +9,14 @@ export default function Home() {
 					</h2>
 					<p>
 						<strong>👋 こんにちは</strong>, My name is{" "}
-						<strong>Tinodaishe Tembo</strong> aka{" "}
-						<strong>xoboid</strong>. I'm a programmer and designer
-						who delights in decoding signals from the{" "}
-						<strong>void</strong> through code and pixel
-						experiments.
+						<strong>Tinodaishe</strong> aka <strong>xoboid</strong>.
+						I'm a programmer who experiments with code and pixels as
+						a way of decoding signals from the <strong>void</strong>
+						.
 					</p>
 					<p>
 						My interests encompass <strong>web development</strong>,{" "}
-						<strong>computer graphics</strong>, and{" "}
+						<strong>generative design</strong>, and{" "}
 						<strong>human computer interaction</strong>. I'm
 						passionate about crafting digital experiences that are
 						visually captivating, with intuitive interactions, with

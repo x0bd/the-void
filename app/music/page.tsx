@@ -38,7 +38,10 @@ export default function Page() {
 
 	return (
 		<div>
-			<h1 className="text0-neutral-100 text-2xl font-semibold my-8">
+			<h2 className="font-extralight text-sm text-neutral-500">
+				*this made it here, huge music nerd btw.
+			</h2>
+			<h1 className="text0-neutral-100 text-2xl font-semibold mb-8 mt-2">
 				Top Tracks
 			</h1>
 
