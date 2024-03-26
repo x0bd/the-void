@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html className={inter.className} lang="en">
-			<body className="bg-zinc-900 text-neutral-200 sm:w-full mx-auto flex min-h-screen max-w-[630px] flex-col gap-9 px-10 py-5 text-base md:gap-20 md:py-12">
+			<body className="bg-zinc-900 text-neutral-200 sm:w-full mx-auto flex min-h-screen max-w-[720px] flex-col gap-9 px-10 py-5 text-base md:gap-20 md:py-12">
 				<Header />
 				<div>{children}</div>
 				<Footer />

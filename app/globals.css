@@ -36,7 +36,7 @@ article h3 {
 }
 
 article code {
-	@apply w-full rounded-sm font-mono bg-zinc-700 text-zinc-100;
+	@apply w-full rounded p-1 font-mono bg-zinc-800 text-zinc-300;
 }
 
 article a {
